@@ -5,7 +5,8 @@ exports.reservePlace = async (req, res) =>{
           email: req.body.email,
           numberOfPeople: req.body.amount,
           destinaton: req.body.destinaton,
-          time: req.body.time
+          time: req.body.time,
+          details: req.body.details
      })
      await newReservation.save()
      .then(data =>{

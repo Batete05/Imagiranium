@@ -16,6 +16,10 @@ const reserved = new mongoose.Schema({
      time: {
           type: String,
           required: true
+     },
+     details: {
+          type: String,
+          required: false
      }
 })
 var reserve = new mongoose.model('reservation', reserved)
