@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 60vh; 
+
+}
+
+.main-container{
+    display: flex;
+  
+}
+
+
+.main-container .container h5{
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: semi-bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-container .container a i{
+    margin: 30px 50px;
+    font-size: 40px;
+}
+
+form{
+    width: 50%;
+    padding: 50px;
+    margin-left: 10%;
+    margin-top: 10vh;
+    font-size: large;
+    background-color: #fff;
+
+}
+
+form h3{
+    font-weight: 400;
+    font-size: 50px;
+    width: 435px;
+    height: 61px;
+    top: 361px;
+    left: 991px;
+    color: #1d024a;
+}
+
+img{
+    
+    height: 85vh;
+}
+
+.image{
+    width: 50%;
+}
+.started{
+    width: 604px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #808080;
+}
+.account{
+    font-size: 20px;
+}
+
+input{
+    height: 40px;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+.input{
+    height: 40px;
+    width: 600px;
+    margin-bottom: 25px;
+    border-color: grey;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 30px 10px;
+}
+
+.button1{
+    width: 628px;
+    height: 78px;
+    top: 1101px;
+    left: 987px;
+    border-radius: 11px;
+    background-color: #1d024a;
+    color: #fff;
+    border: 1px solid #1d024a;
+}
+
+.button2{
+    width: 628px;
+    height: 78px;
+    top: 1101px;
+    left: 987px;
+    border-radius: 11px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="container">
+
+            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+
+            <img src="./images/images.jpg" alt="">
+
+            <h5>Untitled allows us to <span>Streamline</span> <br>
+                our planning and scheduling so <br>
+        we can focus on <span>Simply creating</span></h5>
+    </div>
+    <form action="">
+        <h3>Create an account</h3>
+        <p class="started">Let's get started with your 30 day free trial</p>
+        <input type="text" class="input" placeholder="Name"><br>
+        <input type="email" class="input" placeholder="Email"><br>
+        <input type="text" class="input" placeholder="Phone number"><br>
+        <input type="password" class="input" placeholder="Password"><br>
+        <button class="button1" onclick="">Create account</button>
+        <button class="button2" onclick="">Login with Google</button>
+        <p class="account">Already have an account?<a href="login.ejs">Log In</a></p>
+        <a href="home.ejs">Need help?</a>
+    </form>  
+
+</div>
+</body>
+</html>
