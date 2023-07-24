@@ -1,4 +1,5 @@
 const express = require('express')
+const ejs=require('ejs');
 const bodyParser = require('body-parser')
 const mongoose = require("mongoose")
 const dbConnect = require('./dbConnect.js')
@@ -6,6 +7,7 @@ const bookRoute = require('./routes/bookRoute.js')
 const clientRoute = require('./routes/clientRoute.js')
 const app = express()
 
+app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use('/book', bookRoute)
@@ -21,7 +23,7 @@ mongoose.connect(dbConnect.DATABASE_URI, {
      process.exit()
 })
 app.get('/', (req, res) =>{
-     res.json({"message": "Holla, you're welcome"})
+     res.render('booking.ejs')
 })
 app.listen(5005, () =>{
      console.log("server running on http://localhost:5005");

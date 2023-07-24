@@ -3,9 +3,9 @@ const reservation = require('../models/reservationScheme')
 exports.reservePlace = async (req, res) =>{
      const newReservation = new reservation({
           email: req.body.email,
-          numberOfPeople: req.body.amount,
           destinaton: req.body.destinaton,
           time: req.body.time,
+          numberOfPeople: req.body.amount,
           details: req.body.details
      })
      await newReservation.save()
