@@ -1,0 +1,116 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 60vh; 
+
+}
+
+.main-container{
+    display: flex;
+  
+}
+
+
+.main-container .container h5{
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: semi-bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-container .container a i{
+    margin: 30px 50px;
+    font-size: 40px;
+}
+
+form{
+    width: 50%;
+    padding: 50px;
+    margin-left: 10%;
+    margin-top: 10vh;
+    font-size: large;
+    background-color: #fff;
+
+}
+
+form h3{
+    font-weight: 400;
+    font-size: 50px;
+    width: 435px;
+    height: 61px;
+    top: 361px;
+    left: 991px;
+    color: #1d024a;
+}
+
+img{
+    
+    height: 85vh;
+}
+
+.image{
+    width: 50%;
+}
+.started{
+    width: 604px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #808080;
+}
+.account{
+    font-size: 20px;
+}
+
+input{
+    height: 40px;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+.input{
+    height: 40px;
+    width: 600px;
+    margin-bottom: 25px;
+    border-color: grey;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 30px 10px;
+}
+
+.button1{
+    width: 628px;
+    height: 78px;
+    top: 1101px;
+    left: 987px;
+    border-radius: 11px;
+    background-color: #1d024a;
+    color: #fff;
+    border: 1px solid #1d024a;
+}
+
+.button2{
+    width: 628px;
+    height: 78px;
+    top: 1101px;
+    left: 987px;
+    border-radius: 11px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-top: 20px;
+}

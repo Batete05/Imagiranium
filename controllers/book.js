@@ -1,11 +1,11 @@
-const reservation = require('../models/reservationScheme')
+const Reservation = require('../models/reservationScheme')
 
 exports.reservePlace = async (req, res) =>{
-     const newReservation = new reservation({
+     const newReservation = new Reservation({
           email: req.body.email,
-          destinaton: req.body.destinaton,
+          destination: req.body.destination,
           time: req.body.time,
-          numberOfPeople: req.body.amount,
+          numberOfPeople: req.body.numberOfPeople,
           details: req.body.details
      })
      await newReservation.save()
@@ -16,14 +16,14 @@ exports.reservePlace = async (req, res) =>{
           })
      }).catch(err =>{
           res.status(500).send({
-               message: "An error occured during reservation process",
-               error: err
+               message: "Internal server error",
+               error: err.message
           })
      })
 }
 exports.retrieveAll = async (req, res) =>{
      try {
-          const reservations = await reservation.find()
+          const reservations = await Reservation.find()
           res.status(200).json(reservations)
      }
      catch(err){
@@ -32,14 +32,14 @@ exports.retrieveAll = async (req, res) =>{
 }
 
 exports.cancel = async (req, res) => {
-     await client.findByIdAndRemove(req.params.id)
+     await Reservation.findByIdAndRemove(req.params.id)
           .then(data => {
                if (!data) {
                     res.status(404).send({
                          message: `The reservation doesn't exist.`
                     });
                } else {
-                    res.send({
+                    res.status(200).send({
                          message: "The reservation has been cancelled successfully."
                     });
                }

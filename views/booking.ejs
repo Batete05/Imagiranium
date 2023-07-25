@@ -4,55 +4,9 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="booking.css">
+     <link rel="stylesheet" href="/css/booking.css">
      <title>Booking</title>
-     <style>
-          h1{
-     text-align: center;
-     color: #1D024A;
-     font-weight: 500;
-     font-size: 1.5em;
-     margin: 0;
-}
-.details{
-     display: flex;
-}
-p{
-     text-align: center;
-     opacity: 0.7;
-}
-.container{
-     width: 70%;
-     margin-left: 20%;
-}
-nav{
-     margin-left: 20%;
-}
-input{
-     width: 80%;
-     border: none;
-     border-bottom: 1px solid rgb(156, 156, 156);
-     padding: 8px;
-}
-
-ul{
-     list-style-type: decimal;
-     list-style-position: outside;
-}
-h3{
-     font-weight: 400;
-     margin: 5px;
-}
-button{
-     background-color: #1D024A;
-     border: 1px solid #1D024A;
-     padding: 8px 15%;
-     text-align: center;
-     color: white;
-     border-radius: 5px;
-     margin: 2em 25%;
-}
-     </style>
+   
 </head>
 
 <body>
@@ -60,28 +14,27 @@ button{
      <h1>Booking</h1>
      <p>Am a tourist</p>
      <h1>Details</h1>
-     <form action="/book/" method="post">
+     <form action="/book/reserve" method="post">
      <ul>
           <li>
                <h3>Email: </h3>
-               <input type="email" placeholder="enter your email" name="email">
+               <input type="email" placeholder="enter your email" name="email" id="email">
           </li>
           <li>
                <h3>Location</h3>
-               <input type="text" placeholder="Enter a place you want to visit" name="destination">
+               <input type="text" placeholder="Enter a place you want to visit" name="destination" id="destination">
           </li>
           <li>
                <h3>Date/Time</h3>
-               <input type="datetime" name="time" placeholder="date you will go to the trip">
+               <input type="datetime" name="time" placeholder="date you will go to the trip" id="time">
           </li>
           <li>
                <h3>Number of people</h3>
-               <input type="number" name="numberOfPeople" placeholder="number of people you will come with">
+               <input type="number" name="numberOfPeople" placeholder="number of people you will come with" id="numberOfPeople">
           </li>
           <li>
                <h3>Extra details</h3>
-               <input type="text" placeholder="you can extra details if you you want any other specification"
-                    name="details">
+               <input type="text" placeholder="you can extra details if you you want any other specification" name="details" id="details">
           </li>
      </ul>
      <button type="submit">book now</button>

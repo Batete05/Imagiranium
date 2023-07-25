@@ -7,6 +7,7 @@ const bookRoute = require('./routes/bookRoute.js')
 const clientRoute = require('./routes/clientRoute.js')
 const app = express()
 
+app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
@@ -23,8 +24,8 @@ mongoose.connect(dbConnect.DATABASE_URI, {
      process.exit()
 })
 app.get('/', (req, res) =>{
-     res.render('booking.ejs')
+     res.render('profile.ejs')
 })
-app.listen(5005, () =>{
-     console.log("server running on http://localhost:5005");
+app.listen(3000, () =>{
+     console.log("server running on http://localhost:3000");
 })
