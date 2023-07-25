@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="navContainer">
+
+            <!-- this is the navbar -->
+            <nav class="navbar">
+                <div>
+                    <p>LOGO</p>
+                </div>
+                <div class="links">
+                    <p><a href="">Home</a></p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Book</a></p>
+                    <p><a href="">Contact</a></p>
+                    <div>
+                        <button>
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- this is the end of it -->
+
+            <div>
+                <div class="scroll-container">
+                    <div class="images">
+                        <img src="./images/Rectangle 23.png" alt="">
+                        <!-- <img src="./images/wp2693839-backpack-wallpapers.jpg" alt="">
+                      <img src="./images/wp3812060-tourist-wallpapers.jpg" alt="">
+                      <img src="./images/wp3812067-tourist-wallpapers.jpg" alt=""> -->
+                    </div>
+                    <div class="icon-container">
+                        <span class="icon" onclick="showNextImage()">&#10095;</span>
+                    </div>
+                </div>
+
+
+                <div class="getstarted">
+                    <p>Your fast and more effective <br>
+                        tourists site for you</p>
+
+                    <div>
+                        <button>
+                            Get Started
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- this is the end of the images icons -->
+        </div>
+        <!-- this is the end of the blue section -->
+
+        <div class="placestotravel">
+            <div class="places">
+
+                <div>
+                    <img src="./images/below/Rectangle 15.png" alt="">
+                    <p>
+                        ChatGPT
+                        The Colosseum, also known as the Flavian Amphitheatre, is an ancient Roman amphitheater located
+                        in
+                        the center of Rome, Italy. It is one of the most iconic and well-preserved symbols of ancient
+                        Rome's
+                        grandeur and architectural achievements.</p>
+                </div>
+                <div>
+                    <img src="./images/below/Rectangle 16.png" alt="">
+                    <p>Explore the world's wonders, from ancient historical sites to breathtaking natural landscapes.
+                        Immerse yourself in diverse cultures, savoring local cuisines and traditions. Travel
+                        responsibly,
+                        leaving only footprints and taking with you unforgettable memories.
+                    </p>
+                </div>
+                <div>
+                    <img src="./images/below/Rectangle 17.png" alt="">
+                    <p>Tourists are eager adventurers, venturing far and wide to uncover new horizons,
+                        Armed with cameras and curiosity, tourists capture moments that last a lifetime,
+                        They leave footprints on foreign soil, enriching their lives with cultural treasures.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- this is the end of the description phase of this page -->
+
+        <div class="subscribe">
+            <div style="text-transform: uppercase; ">
+                subscribe to us
+            </div>
+            <div input>
+                <input type="email" name="email" placeholder="Your name"
+                    style="background-color: #1d024a; width: 25vw; height: 40px; border-color: #808080;">
+                <button type="submit"
+                    style="background-color: #1d024a; border-color: white; height: 40px; width: 10vw; border-radius: 24px; color: white;">Send</button>
+            </div>
+            <div style="font-size: 19px;">
+                <p>Subscribe now and never miss the latest updates, exclusive content, and exciting offers!</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="footer">
+                <div>
+                    <div class="Screder">
+                        <img src="./images/logi 2.svg" alt="">
+                        <p style="color: #1d024a;">Screder</p>
+                    </div>
+                    <p>Experience the ultimate convenience <br> and unleash your productivity  <br>with our feature-rich app.
+                        Join </p>
+                </div>
+                <div>
+                    <h1>company</h1>
+                    <div>
+                        <p> About</p>
+                        <p>Terms of use</p>
+                        <p>Pricacy Policy</p>
+                        <p> How it works</p>
+                        <p>contact us</p>
+                    </div>
+                </div>
+                <div>
+                    <h1>support</h1>
+                    <p>support once</p>
+                    <p>2nd support</p>
+                    <p>Quick chat</p>
+                </div>
+                <div>
+                    <h1>Contact</h1>
+                    <div>
+                        <p>whatsapp</p>
+                        <p>cintact24</p>
+                    </div>
+                    <div style="position: absolute; right:8vw;">
+                        <p style="color: black;"> follow me more</p>
+                        <div style="display: flex; gap: 20px;">
+                           <a href=""> <img src="./images/icons/🦆 icon _Instagram_.svg" alt=""></a>
+                           <a href=""> <img src="./images/icons/🦆 icon _LinkedIn_.svg" alt=""></a>
+                           <a href="">  <img src="./images/icons/🦆 icon _What's App_.svg" alt=""></a>
+                           <a href=""> <img src="./images/icons/🦆 icon _Twitter_.svg" alt=""></a>
+                           <a href=""><img src="./images/icons/🦆 icon _Facebook_.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let currentIndex = 0;
+
+    function showNextImage() {
+        const images = document.querySelectorAll('.images img');
+        if (currentIndex < images.length - 1) {
+            currentIndex++;
+            const displacement = currentIndex * images[0].clientWidth;
+            document.querySelector('.images').style.transform = `translateX(-${displacement}px)`;
+        }
+    }
+
+</script>
+
+</html>

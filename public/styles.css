@@ -1,0 +1,125 @@
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  overflow-x: hidden;
+  background-color: #1d024a;
+}
+.navContainer {
+  background-color: #1d024a;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 30px;
+  padding-bottom: 15vh;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 15%;
+  font-size: 25px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
+}
+.links p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.links button {
+  width: 150px;
+  padding: 15px 10px;
+  margin-top: 2vh;
+  border-radius: 24px;
+  border: none;
+}
+.images img {
+  height: 60vh;
+  width: 90vw;
+}
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.getstarted {
+  position: absolute;
+  top: 20vh;
+  left: 70vw;
+}
+.getstarted button {
+  width: 150px;
+  padding: 15px 10px;
+  margin-top: 2vh;
+  border-radius: 24px;
+  border: none;
+  background-color: #1d024a;
+  color: white;
+}
+.placestotravel {
+  background-color: white;
+  padding-bottom: 5vw;
+  /* position: relative; */
+}
+.placestotravel .places {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 30px;
+  color: #808080;
+  position: relative;
+  bottom: 10vh;
+}
+.subscribe{
+  background-color: #1d024a;
+  text-align: center;
+  font-size: 30px;
+  padding: 5vw 5vh;
+  color: white;
+
+}
+.footer{
+  background-color: white;
+ display:grid;
+ grid-template-columns: repeat(4, 1fr);
+ text-transform: capitalize
+}
+.footer h1{
+  color: #1D024A;
+  font-weight: 400;
+  font-size: 30px;
+}
+.footer p{
+  color: #808080;
+  font-weight: 400;
+}
+.footer .Screder{
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: #1D024A;
+}
+.links p a:hover{
+font-size: 30px;
+}
