@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use('/book', bookRoute)
 app.use('/client', clientRoute)
+app.use('/login', clientRoute)
 mongoose.set('strictQuery', false)
 mongoose.connect(dbConnect.DATABASE_URI, {
      useNewUrlParser: true,
