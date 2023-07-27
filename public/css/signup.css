@@ -88,13 +88,13 @@ button>a{
     text-decoration: none;
     color: #fff;
 }
-
 .button2{
     width: 85%;
     border-radius: 5px;
     padding: 8px 20px;
     background-color: #fff;
     color: #000;
+    cursor: pointer;
     border: 1px solid #000;
     margin-top: 20px;
     transition: all 0.2s ease-out;
@@ -104,7 +104,4 @@ a{
     color: #1d024a;
     transition: all 0.2s ease-out;
     font-weight: 400;
-}
-a:hover{
-    text-decoration: 1px underline #1d024a;
 }
