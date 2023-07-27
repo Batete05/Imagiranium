@@ -16,27 +16,26 @@
 
         <div class="container">
 
-            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="http://localhost:3000"><i class="fa-solid fa-arrow-left"></i></a>
 
-            <img src="./images/images.jpg" alt="">
+            <img src="/images/travel1.png" alt="image">
 
-            <h5>Untitled allows us to <span>Streamline</span> <br>
+            <!-- <h5>Untitled allows us to <span>Streamline</span> <br>
                 our planning and scheduling so <br>
-        we can focus on <span>Simply creating</span></h5>
+        we can focus on <span>Simply creating</span></h5> -->
     </div>
-    <form action="">
+    <form action="/client/addClient" method="post">
         <h3>Create an account</h3>
         <p class="started">Let's get started with your 30 day free trial</p>
-        <input type="text" class="input" placeholder="Name" name="clientName"><br>
-        <input type="email" class="input" placeholder="Email" name="clientEmail"><br>
-        <input type="number" class="input" placeholder="Phone number" name="clientNumber"><br>
-        <input type="password" class="input" placeholder="Password" name="clientPassword"><br>
-        <button class="button1" onclick="">Create account</button>
-        <button class="button2" onclick="">Login with Google</button>
-        <p class="account">Already have an account?<a href="login.ejs">Log In</a></p>
-        <a href="home.ejs">Need help?</a>
+        <input type="text" class="input" placeholder="Name" name="name"><br>
+        <input type="email" class="input" placeholder="Email" name="email"><br>
+        <input type="number" class="input" placeholder="Phone number" name="phoneNumber"><br>
+        <input type="password" class="input" placeholder="Password" name="password"><br>
+        <button class="button1" type="submit"><a href="http://localhost:3000/book">Create account</a></button>
+        <button class="button2" type="button">Login with Google</button>
+        <p class="account">Already have an account?<a href="/login">Log In</a></p>
+        <a href="/" class="help">Need help?</a>
     </form>  
-
 </div>
 </body>
 </html>

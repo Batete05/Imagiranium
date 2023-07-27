@@ -9,10 +9,8 @@ exports.addClient = async (req, res) => {
      })
      await newClient.save()
           .then(data => {
-               res.status(200).send({
-                    message: "User created successfully",
-                    user: data
-               })
+               console.log(data);
+               res.redirect('http://localhost:3000')
           })
           .catch(err => {
                res.status(500).send({

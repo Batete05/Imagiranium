@@ -6,40 +6,45 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="/css/booking.css">
      <title>Booking</title>
-   
+
 </head>
 
 <body>
      <div class="container">
-     <h1>Booking</h1>
-     <p>Am a tourist</p>
-     <h1>Details</h1>
-     <form action="/book/reserve" method="post">
-     <ul>
-          <li>
-               <h3>Email: </h3>
-               <input type="email" placeholder="enter your email" name="email" id="email">
-          </li>
-          <li>
-               <h3>Location</h3>
-               <input type="text" placeholder="Enter a place you want to visit" name="destination" id="destination">
-          </li>
-          <li>
-               <h3>Date/Time</h3>
-               <input type="datetime" name="time" placeholder="date you will go to the trip" id="time">
-          </li>
-          <li>
-               <h3>Number of people</h3>
-               <input type="number" name="numberOfPeople" placeholder="number of people you will come with" id="numberOfPeople">
-          </li>
-          <li>
-               <h3>Extra details</h3>
-               <input type="text" placeholder="you can extra details if you you want any other specification" name="details" id="details">
-          </li>
-     </ul>
-     <button type="submit">book now</button>
-</form>
-</div>
+          <div class="image">
+               <img src="/images/travel2.jpg" alt="travel2">
+          </div>
+          <form action="/book/reserve" method="post">
+               <h1>Book For Your Next Vacation</h1>
+               <p>Details</p>
+               <ul>
+                    <li>
+                         <h3>Email: </h3>
+                         <input type="email" placeholder="enter your email" name="email" id="email">
+                    </li>
+                    <li>
+                         <h3>Location</h3>
+                         <input type="text" placeholder="Enter a place you want to visit" name="destination"
+                              id="destination">
+                    </li>
+                    <li>
+                         <h3>Date/Time</h3>
+                         <input type="datetime" name="time" placeholder="date you will go to the trip" id="time">
+                    </li>
+                    <li>
+                         <h3>Number of people</h3>
+                         <input type="number" name="numberOfPeople" placeholder="number of people you will come with"
+                              id="numberOfPeople">
+                    </li>
+                    <li>
+                         <h3>Extra details</h3>
+                         <input type="text" placeholder="you can extra details if you you want any other specification"
+                              name="details" id="details">
+                    </li>
+               </ul>
+               <button type="submit"><a href="http://localhost:3000">book now</a></button>
+          </form>
+     </div>
 </body>
 
 </html>
