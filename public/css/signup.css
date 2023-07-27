@@ -15,7 +15,6 @@ body{
   
 }
 
-
 .main-container .container h5{
     position: absolute;
     bottom: 22%;
@@ -43,11 +42,7 @@ form{
 
 form h3{
     font-weight: 400;
-    font-size: 50px;
-    width: 435px;
-    height: 61px;
-    top: 361px;
-    left: 991px;
+    font-size: 2.5em;
     color: #1d024a;
 }
 
@@ -60,57 +55,56 @@ img{
     width: 50%;
 }
 .started{
-    width: 604px;
-    height: 36px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 0.9em;
     color: #808080;
 }
 .account{
-    font-size: 20px;
+    font-size: 0.8em;
+    opacity: 0.8;
+    margin-top: 1em;
 }
 
 input{
     height: 40px;
-    width: 500px;
+    width: 80%;
     border: none;
     outline: none;
-    border-bottom: 2px solid black;
-    font-size: 18px;
-}
-
-.input{
-    height: 40px;
-    width: 600px;
-    margin-bottom: 25px;
-    border-color: grey;
-    font-size: 18px;
-    color: black;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 30px 10px;
+    border-bottom: 2px solid gray;
+    font-size: 12px;
+    margin: 10px;
 }
 
 .button1{
-    width: 628px;
-    height: 78px;
-    top: 1101px;
-    left: 987px;
-    border-radius: 11px;
+    width: 85%;
+    border-radius: 5px;
+    padding: 8px 20px;
     background-color: #1d024a;
     color: #fff;
     border: 1px solid #1d024a;
+    transition: all 0.2s ease-out;
+}
+button>a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .button2{
-    width: 628px;
-    height: 78px;
-    top: 1101px;
-    left: 987px;
-    border-radius: 11px;
+    width: 85%;
+    border-radius: 5px;
+    padding: 8px 20px;
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
     margin-top: 20px;
+    transition: all 0.2s ease-out;
+}
+a{
+    text-decoration: none;
+    color: #1d024a;
+    transition: all 0.2s ease-out;
+    font-weight: 400;
+}
+a:hover{
+    text-decoration: 1px underline #1d024a;
 }
