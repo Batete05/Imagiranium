@@ -17,6 +17,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -72,33 +73,35 @@ input{
     border-left:none;
     border-right: none;
     padding-right: 500px;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
     border-bottom: 1px solid rgb(174, 173, 173);
+    margin-left: 100px;
+    margin-top: -15px;
 }
 
 content{
     width:70%;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
-
-
-
-button{
+.sms{
     color:purple;
     border:1px solid purple;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: #fff;
     cursor: pointer;
+    margin: 30px;
 }
 .para{
     color: rgb(161, 157, 157);
     width: 700px;
 }
 .heading{
-    margin: 30px;
+    margin: 30px 0px;
     width: 300px;
+    font-size: 2em;
     color: #4c3f89;
 }
 .qns {
@@ -106,31 +109,12 @@ button{
     padding: 10px;
     float: left; 
     box-sizing: border-box;
-}
-
-
-/* .footer {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0;
+    flex-direction: column;
 }
-
-.footer div {
-    flex: 1 1 25%;
-    text-align: center;
+.qns label{
+    outline: none;
 }
-
-.footer h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer p {
-    margin: 0;
-} */
-
-
 
 .aside {
     flex: 1 1 50%;
@@ -138,9 +122,37 @@ button{
     float: right; 
     box-sizing: border-box; 
 }
-
-
-
+.image{
+    margin-top: -200px;
+    margin-bottom: 25px;
+    margin-right: 60px;
+    width: 200px;
+    height: 240px;
+}
+.aside-content h1{
+font-size: 1.2em;
+color: #4c3f89;
+margin: 15px 0px;
+}
+.aside-content p{
+    font-size: 0.8em;
+    line-height: 20px;
+    color: rgb(161, 157, 157);
+}
+.nbrs{
+    color:purple;
+    border:1px solid purple;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 30px;
+    float: left;
+}
+.num{
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
     </style>
 </head>
 
@@ -159,6 +171,7 @@ button{
             </div>
         </div>
         <div class="content">
+            <div class="aside1">
             <h1 class="heading">Let's work together!</h1>
             <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Incidunt doloribus molestias, eaque et obcaecati
@@ -166,64 +179,38 @@ button{
                  Non atque ipsa itaque enim vitae est eligendi.
             </p>
             <div class="qns"> 
-            <label for="">what's your name</label><br><br>
-            <input type="text" name="name" placeholder="Type your full name"><br><br><br><br>
-            <label for="">What's your email address</label><br><br>
-            <input type="email" name="email" placeholder="example@gmail.com"><br><br><br><br>
-            <label for="">What's your phone number</label><br><br>
-            <input type="number" name="phone" placeholder="+250 79/2/3/8 000000000"><br><br><br><br>
-            <label for="">What's your company/Organization name</label><br><br>
-            <input type="text" name="company" placeholder="Type your company/organization name"><br><br><br><br>
-            <label for="">What service are you looking for</label><br><br>
-            <input type="text" name="service" placeholder="Choose from a list here"><br><br><br><br>
-            <label for="">What have you budgeted for this project</label><br><br>
-            <input type="text" name="bugdet" placeholder="Chooose from a list here"><br><br><br><br>
-            <label for="">Tell us about your project</label><br><br>
-            <input type="text" name="project" placeholder="Please type your project description"><br><br><br><br>
-            <label for="">Write us a message</label><br><br>
-            <input type="text" name="message" placeholder="Please type your message here"><br><br><br><br>
-            <button>SEND MESSAGE</button>
+            <div class="num"><div class="nbrs">01</div><label for="">what's your name</label></div>
+            <input type="text" name="name" placeholder="Type your full name">
+            <div class="num"><div class="nbrs">02</div><label for="">What's your email address</label></div>
+            <input type="email" name="email" placeholder="example@gmail.com">
+            <div class="num"><div class="nbrs">03</div><label for="">What's your phone number</label></div>
+            <input type="number" name="phone" placeholder="+250 79/2/3/8 000000000">
+            <div class="num"><div class="nbrs">04</div><label for="">What's your company/Organization name</label></div>
+            <input type="text" name="company" placeholder="Type your company/organization name">
+            <div class="num"><div class="nbrs">05</div><label for="">What service are you looking for</label></div>
+            <input type="text" name="service" placeholder="Choose from a list here">
+            <div class="num"><div class="nbrs">06</div><label for="">What have you budgeted for this project</label></div>
+            <input type="text" name="bugdet" placeholder="Chooose from a list here">
+            <div class="num"><div class="nbrs">07</div><label for="">Tell us about your project</label></div>
+            <input type="text" name="project" placeholder="Please type your project description">
+            <div class="num"><div class="nbrs">08</div><label for="">Write us a message</label></div>
+            <input type="text" name="message" placeholder="Please type your message here">
+            <div><button class="sms">SEND MESSAGE</button></div>
         </div>
+    </div>
         <div class="aside">
             <img src="Screenshot 2023-07-22 144448.png" alt="The image" class="image">
-            <p>CALL US</p><br>
-            <p>+284775949 896833</p><br>
-            <p>+332822324 788768</p><br><br><br><br><br><br><br>
-            <p>ADDRESS</p>
+            <div class="aside-content">
+            <h1>CALL US</h1>
+            <p>+284775949 896833</p>
+            <p>+332822324 788768</p>
+            <h1>ADDRESS</h1>
             <p>ALLHFLKJRHHUBJUHBLF</p>
             <p>1098108480280824755</p>
             <p>2364869734646947949</p>
         </div>
         </div>
-        <!-- <div class="footer">
-            <div>
-                <h1>Screder</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Tempora fuga velit corporis? Tempore obcaecati voluptate, 
-                    non, mollitia ab natus saepe voluptas magni molestiae adipisci
-                     laboriosam sapiente culpa, quidem aut reiciendis!</p>
-            </div>
-            <div>
-                <h1>Company</h1>
-                <p>About</p>
-                <p>Terms of use</p>
-                <p>Privacy Policy</p>
-                <p>How it works</p>
-                <p>contact us</p>
-            </div>
-            <div>
-                <h1>Support</h1>
-                <p>Support once</p>
-                <p>2nd support</p>
-                <p>Quick chat</p>
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <p>Watsapp</p>
-                <p>cintact 24</p>
-                <p style="font-weight:bold; ">Follow for more</p>
-            </div>
-        </div> -->
+        </div>
     </div>
 </body>
 
